@@ -276,8 +276,8 @@ body {
 /* Traveling light around border - outside */
 .btn-border-light {
   position: absolute;
-  inset: -4px;
-  border-radius: 16px;
+  inset: -3px;
+  border-radius: 15px;
   overflow: hidden;
   pointer-events: none;
   z-index: -1;
@@ -286,8 +286,8 @@ body {
 .btn-border-light::before {
   content: '';
   position: absolute;
-  width: 80px;
-  height: 4px;
+  width: 60px;
+  height: 1px;
   background: linear-gradient(90deg, 
     transparent, 
     rgba(245, 220, 110, 1), 
@@ -295,16 +295,15 @@ body {
     rgba(245, 220, 110, 1),
     transparent
   );
-  filter: blur(2px);
-  box-shadow: 0 0 15px rgba(245, 220, 110, 0.8);
-  animation: travelTop 4s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(245, 220, 110, 0.5);
+  animation: travelTop 8s ease-in-out infinite;
 }
 
 .btn-border-light::after {
   content: '';
   position: absolute;
-  width: 80px;
-  height: 4px;
+  width: 60px;
+  height: 1px;
   background: linear-gradient(90deg, 
     transparent, 
     rgba(245, 220, 110, 1), 
@@ -312,15 +311,14 @@ body {
     rgba(245, 220, 110, 1),
     transparent
   );
-  filter: blur(2px);
-  box-shadow: 0 0 15px rgba(245, 220, 110, 0.8);
-  animation: travelBottom 4s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(245, 220, 110, 0.5);
+  animation: travelBottom 8s ease-in-out infinite;
 }
 
 @keyframes travelTop {
   0% {
     top: 0;
-    left: -80px;
+    left: -60px;
     opacity: 0;
   }
   10% {
@@ -331,7 +329,7 @@ body {
   }
   100% {
     top: 0;
-    left: calc(100% + 80px);
+    left: calc(100% + 60px);
     opacity: 0;
   }
 }
@@ -339,7 +337,7 @@ body {
 @keyframes travelBottom {
   0% {
     bottom: 0;
-    right: -80px;
+    right: -60px;
     opacity: 0;
   }
   10% {
@@ -350,7 +348,7 @@ body {
   }
   100% {
     bottom: 0;
-    right: calc(100% + 80px);
+    right: calc(100% + 60px);
     opacity: 0;
   }
 }
@@ -361,8 +359,9 @@ body {
   transform: translateY(-3px);
 }
 
-.premium-btn:hover .btn-border-light::before {
-  background: radial-gradient(circle, rgba(255, 229, 102, 1) 0%, transparent 70%);
+.premium-btn:hover .btn-border-light::before,
+.premium-btn:hover .btn-border-light::after {
+  box-shadow: 0 0 10px rgba(245, 220, 110, 0.7);
 }
 
 .premium-btn:active {
