@@ -37,7 +37,7 @@ const App = () => {
         {/* Profile Photo with Floating Animation */}
         <div className="profile-photo-container" data-testid="profile-photo">
           <img
-            src="https://customer-assets.emergentagent.com/job_5c5ac3d8-d8fe-4420-8f90-6fd83e1edd67/artifacts/w5ekkmxu_IMG_7800.JPG.jpeg"
+            src="https://customer-assets.emergentagent.com/job_nutri-eliane/artifacts/yfckkqw5_IMG_7800.JPG-removebg-preview.png"
             alt="Dra. Eliane Costa"
             className="profile-photo"
           />

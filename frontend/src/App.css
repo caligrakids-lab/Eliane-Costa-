@@ -4,18 +4,18 @@
 /* Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
-/* CSS Variables - Luxury Brown/Gold Palette */
+/* CSS Variables - Luxury Brown/Gold Palette - Lighter */
 :root {
-  --brown-dark: #1a0f0a;
-  --brown-medium: #3d2517;
-  --brown-light: #6b4423;
-  --gold-dark: #8B6914;
-  --gold-primary: #C9A227;
-  --gold-light: #D4AF37;
-  --gold-bright: #E8C547;
-  --cream: #F5F0E6;
+  --brown-dark: #1c1410;
+  --brown-medium: #4a3527;
+  --brown-light: #7d5a3c;
+  --gold-dark: #9A7B19;
+  --gold-primary: #D4B845;
+  --gold-light: #E8CC5A;
+  --gold-bright: #F5DC6E;
+  --cream: #FAF6ED;
   --white: #FFFFFF;
-  --text-muted: #9E8B7A;
+  --text-muted: #B8A896;
 }
 
 * {
@@ -72,9 +72,9 @@ body {
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201, 162, 39, 0.15) 0%, rgba(139, 105, 20, 0.1) 30%, transparent 70%),
-    radial-gradient(ellipse 100% 80% at 50% -20%, rgba(212, 175, 55, 0.12) 0%, transparent 50%),
-    linear-gradient(180deg, var(--brown-dark) 0%, #0d0805 100%);
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(212, 184, 69, 0.12) 0%, rgba(154, 123, 25, 0.08) 30%, transparent 70%),
+    radial-gradient(ellipse 100% 80% at 50% -20%, rgba(232, 204, 90, 0.1) 0%, transparent 50%),
+    linear-gradient(180deg, var(--brown-dark) 0%, #0d0a07 100%);
   z-index: 0;
 }
 
@@ -142,13 +142,13 @@ body {
   text-transform: uppercase;
   background: linear-gradient(
     135deg, 
-    #F5F0E6 0%, 
-    #D4AF37 20%, 
-    #FFD700 40%, 
-    #E8C547 50%, 
-    #FFD700 60%, 
-    #D4AF37 80%, 
-    #F5F0E6 100%
+    #FFFFFF 0%, 
+    #F5DC6E 15%, 
+    #FFE566 30%, 
+    #FFFACD 50%, 
+    #FFE566 70%, 
+    #F5DC6E 85%, 
+    #FFFFFF 100%
   );
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -156,14 +156,14 @@ body {
   background-clip: text;
   animation: subtleShine 4s ease-in-out infinite;
   text-shadow: none;
-  filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.3));
+  filter: drop-shadow(0 0 15px rgba(245, 220, 110, 0.5));
 }
 
 .subtitle {
   font-family: 'Manrope', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: var(--text-muted);
+  color: #C9B8A5;
   letter-spacing: 0.02em;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
@@ -179,12 +179,12 @@ body {
   overflow: hidden;
   background: linear-gradient(90deg, 
     transparent 0%, 
-    rgba(201, 162, 39, 0.3) 15%, 
-    rgba(212, 175, 55, 0.5) 50%, 
-    rgba(201, 162, 39, 0.3) 85%, 
+    rgba(212, 184, 69, 0.4) 15%, 
+    rgba(232, 204, 90, 0.6) 50%, 
+    rgba(212, 184, 69, 0.4) 85%, 
     transparent 100%
   );
-  box-shadow: 0 0 8px rgba(201, 162, 39, 0.3);
+  box-shadow: 0 0 10px rgba(212, 184, 69, 0.4);
 }
 
 .golden-line::before {
@@ -194,12 +194,12 @@ body {
   height: 100%;
   background: linear-gradient(90deg, 
     transparent, 
-    rgba(232, 197, 71, 1), 
-    rgba(255, 215, 0, 1),
-    rgba(232, 197, 71, 1),
+    rgba(245, 220, 110, 1), 
+    rgba(255, 229, 102, 1),
+    rgba(245, 220, 110, 1),
     transparent
   );
-  box-shadow: 0 0 15px rgba(232, 197, 71, 0.8);
+  box-shadow: 0 0 20px rgba(245, 220, 110, 0.9);
   animation: shimmerLine 4s ease-in-out infinite;
 }
 
