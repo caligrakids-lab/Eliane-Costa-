@@ -3,9 +3,9 @@ import "@/App.css";
 const App = () => {
   const buttons = [
     {
-      title: "Agende sua Consulta",
+      title: "Agende sua consulta",
       subtitle: "WhatsApp",
-      icon: "fab fa-whatsapp",
+      icon: "fas fa-calendar-alt",
       href: "https://api.whatsapp.com/send/?phone=5562994423813&text=Ol%C3%A1+Dra.+Gostaria+de+obter+mais+informa%C3%A7%C3%B5es+sobre+sua+consulta.+&type=phone_number&app_absent=0",
     },
     {
@@ -22,8 +22,8 @@ const App = () => {
     },
     {
       title: "Mounjaro: o jeito certo de usar",
-      subtitle: "Saiba mais",
-      icon: "fas fa-pills",
+      subtitle: "Guia Completo",
+      icon: "fas fa-pen",
       href: "https://elipcl.hotmart.host/pagina-de-vendas-61793b05-1c8d-4c7f-acef-73a11629e2fa?fbclid=PAQ0xDSwQgJJJleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaev_AxuRmrNgPLYRjj8ksBZHlqLKLZ5SSMG852cCohJjQnMN6kyatwDxx9HzA_aem_-R1OPGvSv7uMj2u4isP0bg",
     },
   ];
@@ -46,7 +46,8 @@ const App = () => {
 
         {/* Title Section */}
         <div className="title-section" data-testid="title-section">
-          <h1 className="main-title">Dra. Eliane Costa</h1>
+          <h1 className="main-title">DRA. ELIANE</h1>
+          <h1 className="main-title">COSTA</h1>
           <p className="subtitle">Resultados reais começam na alimentação certa.</p>
           <div className="golden-line"></div>
         </div>

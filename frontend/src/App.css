@@ -83,8 +83,8 @@ body {
   position: relative;
   z-index: 10;
   width: 100%;
-  max-width: 400px;
-  margin-bottom: -40px;
+  max-width: 320px;
+  margin-bottom: -30px;
   animation: floatPhoto 4s ease-in-out infinite;
 }
 
@@ -100,9 +100,9 @@ body {
 .profile-photo {
   width: 100%;
   height: auto;
-  max-height: 450px;
-  object-fit: cover;
-  object-position: top center;
+  max-height: 380px;
+  object-fit: contain;
+  object-position: center top;
   display: block;
 }
 
@@ -111,13 +111,13 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60%;
+  height: 50%;
   background: linear-gradient(
     to top,
     var(--brown-dark) 0%,
-    rgba(26, 15, 10, 0.95) 20%,
-    rgba(26, 15, 10, 0.7) 40%,
-    rgba(26, 15, 10, 0.3) 60%,
+    rgba(26, 15, 10, 0.95) 15%,
+    rgba(26, 15, 10, 0.7) 35%,
+    rgba(26, 15, 10, 0.3) 55%,
     transparent 100%
   );
   pointer-events: none;
@@ -134,11 +134,12 @@ body {
 
 .main-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.35em;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
   background: linear-gradient(
     135deg, 
     #F5F0E6 0%, 
@@ -161,9 +162,10 @@ body {
 .subtitle {
   font-family: 'Manrope', sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--text-muted);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
+  margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 
