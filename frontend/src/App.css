@@ -273,11 +273,11 @@ body {
   z-index: 1;
 }
 
-/* Traveling light around border */
+/* Traveling light around border - outside */
 .btn-border-light {
   position: absolute;
-  inset: -2px;
-  border-radius: 14px;
+  inset: -4px;
+  border-radius: 16px;
   overflow: hidden;
   pointer-events: none;
   z-index: -1;
@@ -286,32 +286,72 @@ body {
 .btn-border-light::before {
   content: '';
   position: absolute;
-  width: 50px;
-  height: 50px;
-  background: radial-gradient(circle, rgba(245, 220, 110, 0.8) 0%, transparent 70%);
-  animation: travelAroundBorder 6s linear infinite;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(245, 220, 110, 1), 
+    rgba(255, 229, 102, 1),
+    rgba(245, 220, 110, 1),
+    transparent
+  );
+  filter: blur(2px);
+  box-shadow: 0 0 15px rgba(245, 220, 110, 0.8);
+  animation: travelTop 4s ease-in-out infinite;
 }
 
-@keyframes travelAroundBorder {
+.btn-border-light::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(245, 220, 110, 1), 
+    rgba(255, 229, 102, 1),
+    rgba(245, 220, 110, 1),
+    transparent
+  );
+  filter: blur(2px);
+  box-shadow: 0 0 15px rgba(245, 220, 110, 0.8);
+  animation: travelBottom 4s ease-in-out infinite;
+}
+
+@keyframes travelTop {
   0% {
-    top: -25px;
-    left: 0;
+    top: 0;
+    left: -80px;
+    opacity: 0;
   }
-  25% {
-    top: -25px;
-    left: calc(100% - 25px);
+  10% {
+    opacity: 1;
   }
-  50% {
-    top: calc(100% - 25px);
-    left: calc(100% - 25px);
-  }
-  75% {
-    top: calc(100% - 25px);
-    left: 0;
+  90% {
+    opacity: 1;
   }
   100% {
-    top: -25px;
-    left: 0;
+    top: 0;
+    left: calc(100% + 80px);
+    opacity: 0;
+  }
+}
+
+@keyframes travelBottom {
+  0% {
+    bottom: 0;
+    right: -80px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 0;
+    right: calc(100% + 80px);
+    opacity: 0;
   }
 }
 
