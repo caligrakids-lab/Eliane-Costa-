@@ -66,6 +66,7 @@ const App = () => {
               data-testid={`btn-${index}`}
               style={{ animationDelay: `${0.1 * (index + 1)}s` }}
             >
+              <div className="btn-border-light"></div>
               <div className="btn-icon">
                 <i className={btn.icon}></i>
               </div>
@@ -73,7 +74,6 @@ const App = () => {
                 <span className="btn-title">{btn.title}</span>
                 <span className="btn-subtitle">{btn.subtitle}</span>
               </div>
-              <div className="btn-glow"></div>
             </a>
           ))}
         </div>
